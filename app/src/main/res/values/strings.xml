@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MfecApplication</string>
+    <string name="action_sign_up">Signup</string>
+    <string name="login_button">LOGIN</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_username_hint">Email</string>
+    <string name="tel">Tel</string>
+    <string name="action_sign_in">Password</string>
+</resources>
