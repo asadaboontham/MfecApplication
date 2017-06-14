@@ -15,14 +15,15 @@ public class SigupActivity extends AppCompatActivity {
     private String mailForRegister;
 
     @Override
-    protected void onCreate(@Nullable  Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sigup);
         getValue();
         initView();
         mail.setText(mailForRegister);
     }
-    private void initView(){
+
+    private void initView() {
         name = (EditText) findViewById(R.id.et_name);
         surname = (EditText) findViewById(R.id.et_surname);
         mail = (EditText) findViewById(R.id.et_mail);
@@ -30,10 +31,9 @@ public class SigupActivity extends AppCompatActivity {
         sigup = (Button) findViewById(R.id.btn_sigup);
 
 
-
     }
 
     private void getValue() {
-        mailForRegister = getIntent().getStringExtra("mailRegister");
+        mailForRegister = getIntent().getStringExtra("mail");
     }
 }

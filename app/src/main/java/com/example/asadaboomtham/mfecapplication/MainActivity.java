@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener onSigupClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-                navigateToSigup();
+            navigateToSigup();
         }
     };
     private View.OnClickListener onLoginClickListener = new View.OnClickListener() {
@@ -63,14 +63,16 @@ public class MainActivity extends AppCompatActivity {
 
     private void navigateToSigup() {
         Intent intent = new Intent(MainActivity.this, SigupActivity.class);
-        intent.putExtra("mailRegister", mail.getText().toString());
+        //               keys           values
+        intent.putExtra("mail", mail.getText().toString());  //putExtra เป็นการดึงข้อมูลเข้าไป
         startActivity(intent);
 
     }
 
     private void navigateToPage2() {
+
         Intent intent = new Intent(MainActivity.this, IActivity.class);
-       // intent.putExtra("mailRegister",mail.getText().toString());
+        // intent.putExtra("mailRegister",mail.getText().toString());
         startActivity(intent);
     }
 

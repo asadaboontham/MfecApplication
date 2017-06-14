@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
+import butterknife.BindView;   /* generate Code */
 import butterknife.ButterKnife;
 
 public class IActivity extends AppCompatActivity {
@@ -42,7 +42,7 @@ public class IActivity extends AppCompatActivity {
         shopItemList.add(new ShopItem("Hail", "100", R.mipmap.ic_launcher));
         shopItemList.add(new ShopItem("Hail", "100", R.mipmap.ic_launcher));
     }
-    private void initView() {
+    private void initView() {  /* Use For Fragment */
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
         rvListItem.setLayoutManager(linearLayoutManager);
         ItemAdaper itemAdaper = new ItemAdaper(this,shopItemList);

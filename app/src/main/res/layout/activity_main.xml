@@ -43,6 +43,7 @@
                 <EditText
                     android:id="@+id/et_mail"
                     android:layout_width="300dp"
+                    android:inputType="text"
                     android:layout_height="wrap_content"
                     android:hint="@string/login_username_hint"
                     android:paddingLeft="16dp"
